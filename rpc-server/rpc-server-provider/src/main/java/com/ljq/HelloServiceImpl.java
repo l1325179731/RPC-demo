@@ -1,6 +1,13 @@
 package com.ljq;
 
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.stereotype.Component;
+
+@RpcService(IHelloService.class)
 public class HelloServiceImpl implements IHelloService {
+   /* static {
+        System.out.println("aaaaaaa");
+    }*/
 
     @Override
     public String sayHello(String content) {
